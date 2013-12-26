@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Main</title>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css"/>
+		<script type="text/javascript" src="excanvas.js"></script>
+		<script type="text/javascript" src="segment-display.js"></script>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.0.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/socket.io.js"></script>
+		
+	</head>
+
+
+	<body>
+	 	<div  id="gen" data-role="page">
+		<div data-role="header">
+			<a data-role="back" href="window.close();history.back();" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">back</a>
+				<h1>Fixed game</h1>
+			</div>
+			<div style="text-align:center;"><img src="img/logo.png" style="width:20%;"></div>
+				<div id="sec">
+					<img src="img/court_positions_1.png">
+					<div id="tab"><table id="high" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td><a href="#popupBasic" data-rel="popup"><img id="a1" class="in" src="img/click.png" ontouchstart="pop('a1')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="b1" class="in" src="img/click.png" ontouchstart="pop('b1')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="c1" class="in" src="img/click.png" ontouchstart="pop('c1')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="d1" class="in" src="img/click.png" ontouchstart="pop('d1')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="e1" class="in" src="img/click.png" ontouchstart="pop('e1')"></a> </td>
+
+						</tr>
+						<tr>
+							<td><a href="#popupBasic" data-rel="popup"><img id="a2" class="in" src="img/click.png" ontouchstart="pop('a2')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="b2" class="in" src="img/click.png" ontouchstart="pop('b2')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="c2" class="in" src="img/click.png" ontouchstart="pop('c2')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="d2" class="in" src="img/click.png" ontouchstart="pop('d2')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="e2" class="in" src="img/click.png" ontouchstart="pop('e2')"></a> </td>
+						</tr>
+						<tr>
+							<td><a href="#popupBasic" data-rel="popup"><img id="a3" class="in" src="img/click.png" ontouchstart="pop('a3')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="b3" class="in" src="img/click.png" ontouchstart="pop('b3')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="c3" class="in" src="img/click.png" ontouchstart="pop('c3')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="d3" class="in" src="img/click.png" ontouchstart="pop('d3')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="e3" class="in" src="img/click.png" ontouchstart="pop('e3')"></a> </td>
+						</tr>
+					</table>
+					<table id="low" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td><a href="#popupBasic" data-rel="popup"><img id="a4" class="in" src="img/click.png" ontouchstart="pop('a4')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="b4" class="in" src="img/click.png" ontouchstart="pop('b4')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="c4" class="in" src="img/click.png" ontouchstart="pop('c4')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="d4" class="in" src="img/click.png" ontouchstart="pop('d4')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="e4" class="in" src="img/click.png" ontouchstart="pop('e4')"></a> </td>
+
+						</tr>
+						<tr>
+							<td><a href="#popupBasic" data-rel="popup"><img id="a5" class="in" src="img/click.png" ontouchstart="pop('a5')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="b5" class="in" src="img/click.png" ontouchstart="pop('b5')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="c5" class="in" src="img/click.png" ontouchstart="pop('c5')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="d5" class="in" src="img/click.png" ontouchstart="pop('d5')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="e5" class="in" src="img/click.png" ontouchstart="pop('e5')"></a> </td>
+						</tr>
+						<tr>
+							<td><a href="#popupBasic" data-rel="popup"><img id="a6" class="in" src="img/click.png" ontouchstart="pop('a6')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="b6" class="in" src="img/click.png" ontouchstart="pop('b6')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="c6" class="in" src="img/click.png" ontouchstart="pop('c6')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="d6" class="in" src="img/click.png" ontouchstart="pop('d6')"></a> </td>
+							<td><a href="#popupBasic" data-rel="popup"><img id="e6" class="in" src="img/click.png" ontouchstart="pop('e6')"></a> </td>
+						</tr>
+					</table>
+					</div>
+					
+				</div>
+				<div class="overlayContent" data-role="popup" id="popupBasic" data-position-to="window" data-overlay-theme="b" data-theme="a" data-corners="false">
+					<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<div data-role="header" data-theme="a" class="ui-corner-top ui-header ui-bar-a" role="banner">
+					<h1 class="ui-title" role="heading" aria-level="1">Game parameters</h1>
+			</div>
+					<p>Please select your game parameters</p>
+					<form id="config">
+					<div style="display:inline;"><h3>Effect:</h3> <br>
+						<a  class="button" ontouchstart='changeImg("flat")'><img src="img/flat.png" style="width:20%;"   id="flat" ></a>
+						<a  class="button" ontouchstart='changeImg("top")'><img src=" img/top.png" style="width:20%;"    id="top"  ></a>
+						<a  class="button"  ontouchstart='changeImg("back")'><img  src="img/back.png" style="width:20%;" id="back" ></a>
+						<a  class="button" ontouchstart='changeImg("lob")'><img src=" img/lob.png" style="width:20%;"    id="lob"  ></a>
+					</div>
+					<br>
+					<label for="slider-fill"><h3>Speed:</label>
+			<input type="range" name="slider-fill" id="speed_slider" value="2" min="1" max="4" data-highlight="true" /><br>
+
+				<label for="slider-fill"><h3>Delay:</label>
+			<input type="range" name="slider-fill" id="delay_slider" value="3.5" step="0.5" min="2" max="9" data-highlight="true" /><br>
+					<a  data-role="button" class="ui-btn ui-icon-check ui-btn-icon-left"  id="OKBtn" ontouchstart="getData(); $('#popupBasic').popup('close');">OK</a>
+					<a  data-role="button" class="ui-btn ui-btn-b ui-icon-delete ui-btn-icon-left"  id="cancelBtn" ontouchstart=" $('#popupBasic').popup('close');">cancel</a>
+			  </form>                                    
+		  </div>                                         
+		                                    
+	</div>                                               
+				 
+	</body>
+</html>
