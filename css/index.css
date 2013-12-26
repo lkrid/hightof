@@ -1,0 +1,34 @@
+body
+{
+	height:100%;
+	width:100%;
+	text-align:center;
+	background-repeat:no-repeat;
+	font-size:100%;
+}
+div#gen
+{
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+	/*padding:20%;
+	margin-top:30%*/
+	height:80%;
+	
+}
+
+div#child
+{
+	
+	background-color: rgba(0, 128, 255, 0.6);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+	/*padding:20%;
+	margin-top:30%*/
+	padding-top:10%;
+	padding-bottom:10%;
+	padding-left:10%;
+	height:80%
+}
+form 
+{
+	width:80%;
+}
+.ui-page{background-image:url(../img/authenticate_bkground.png);}
