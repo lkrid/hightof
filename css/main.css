@@ -1,0 +1,85 @@
+body
+ {
+  width:device-width;
+  height:device-height;
+}
+div#gen,div#tab_1
+{
+	height:100%;
+	width: 100%;
+	position:absolute;
+	
+	
+}
+
+div#tab
+{
+	height:10%;
+}
+div#sec
+{
+	
+	width: 98%;
+	position:absolute;
+
+	
+}
+img
+{
+	height:auto;
+	width: 100%;
+	z-index:-1;
+	
+}
+div#tab
+{
+		position:absolute;
+		top:0;
+		left:18%;
+		width: 65%;
+		height:76%;
+		margin-top:7%;
+		
+}
+#high
+{
+	height:48%;
+	width: 100%;
+	text-align:center;
+	margin-top:0;
+	
+	
+}
+#low
+{
+	height:48%;
+	width: 100%;
+	margin-top:9%;
+	text-align:center;
+	margin-bottom:0;
+	
+}
+
+div#popupBasic 
+{
+text-align: center;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+position: fixed;
+left: 0;
+top:20%;
+}
+.in 
+{	
+	width: 80%;
+	width: 80%;
+}
+
+button:active a.button:active .in:active 
+{
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
