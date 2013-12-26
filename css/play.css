@@ -1,0 +1,40 @@
+body
+ {
+  width:device-width;
+  height:device-height;
+}
+div#main
+{
+	height:80%;
+	width: 100%;
+}
+div#child
+{
+	height:75%;
+	width: 80%;
+	position:absolute;
+	margin-top:5%;
+	margin-left:10%;
+	margin-right:10%;
+	text-align:center;
+	background-color: rgba(230, 230, 230, 0.6);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+	
+}
+img
+{
+	width:30%;
+}
+table
+{
+	height:100%;
+	width:100%;
+	text-align:center;
+}
+div#tab
+{
+	height:100%;
+	width:80%;
+	text-align:center;
+	margin-left:10%;
+}
